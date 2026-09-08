@@ -1,5 +1,5 @@
 """
-@module bizops.bizops_planner
+@module bizops.custom.bizops_planner
 
 The order planner (biz-1): run the CURRENT registrar of ProductOrder
 rows against a business profile and answer Dustin's three questions
@@ -23,13 +23,13 @@ replace them.
 import json
 import math
 
-from supplychain.formula_analysis import make_cost
-from supplychain.mold_analysis import (
+from supplychain.custom.formula_analysis import make_cost
+from supplychain.custom.mold_analysis import (
     MOLD_STRATEGY_PRIORS, OIL_RELEASE_USD_PER_KG_EST,
     mold_strategy_compare,
 )
-from supplychain.reclaim_analysis import RECLAIM_DEFAULTS
-from bizops.bizops_flows import _loads, _named, _rows
+from supplychain.custom.reclaim_analysis import RECLAIM_DEFAULTS
+from bizops.custom.bizops_flows import _loads, _named, _rows
 
 #: Reference-size (1 L class) physical priors — flagged estimates.
 PLAN_PRIORS = {

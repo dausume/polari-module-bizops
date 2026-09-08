@@ -1,5 +1,5 @@
 """
-@module bizops.bizops_deals
+@module bizops.custom.bizops_deals
 
 biz-5 / scenario-3 (static half): TRANSFER-PRICE DISCOVERY for
 partnership deals. For every flow on a PartnershipAgreement the
@@ -24,8 +24,8 @@ price sweep) stays a plan-first suggestion in the report.
 
 import re
 
-from bizops.bizops_flows import _loads, _named, _rows
-from supplychain.formula_analysis import (
+from bizops.custom.bizops_flows import _loads, _named, _rows
+from supplychain.custom.formula_analysis import (
     effective_unit_price, make_cost,
 )
 

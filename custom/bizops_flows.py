@@ -1,5 +1,5 @@
 """
-@module bizops.bizops_flows
+@module bizops.custom.bizops_flows
 
 Setup/Upgrade flow reports + the Local Economy track (biz-1).
 Everything DERIVES from live rows: upgrade steps surface as

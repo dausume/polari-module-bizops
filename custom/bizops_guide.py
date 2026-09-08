@@ -1,5 +1,5 @@
 """
-@module bizops.bizops_guide
+@module bizops.custom.bizops_guide
 
 The INTUITIVE walkthrough (biz-3, Dustin): walk a NEW business maker
 through exactly what to do at stage 0 and the step up to stage 1 —
@@ -12,10 +12,10 @@ Scope honesty: stages 0 and 1 only for now — later rungs exist in
 the ladder but are not walked here.
 """
 
-from supplychain.formula_analysis import requirement_coverage
-from bizops.bizops_compliance import sellability_report
-from bizops.bizops_flows import _loads, _named, _rows
-from bizops.bizops_planner import prestage_plan, product_readiness
+from supplychain.custom.formula_analysis import requirement_coverage
+from bizops.custom.bizops_compliance import sellability_report
+from bizops.custom.bizops_flows import _loads, _named, _rows
+from bizops.custom.bizops_planner import prestage_plan, product_readiness
 
 
 def _risks_for(manager, step_ref):

@@ -1,30 +1,30 @@
 """
-@module bizops.selftest_bizops
+@module bizops.bizops_selftest
 
 biz-1 selftests: the setup axiom + upgrade gates, the local-economy
 track deriving from live-shaped rows, and the order planner's three
 answers (capacity, supply, mold-ladder reuse) over fixture orders.
 
-Run from polari-framework/: python3 -m bizops.selftest_bizops
+Run from polari-framework/: python3 -m bizops.bizops_selftest
 """
 
 import json
 import types
 
-from bizops.bizops_deals import (
+from bizops.custom.bizops_deals import (
     deal_price_window, deal_pricing_catalog,
 )
-from bizops.bizops_compliance import (
+from bizops.custom.bizops_compliance import (
     qa_report, sellability_report,
 )
-from bizops.bizops_flows import (
+from bizops.custom.bizops_flows import (
     business_flow_report, local_economy_report,
 )
-from bizops.bizops_guide import (
+from bizops.custom.bizops_guide import (
     partnership_report, partnership_suggestions,
     startup_walkthrough,
 )
-from bizops.bizops_planner import (
+from bizops.custom.bizops_planner import (
     lead_time_quote, order_plan, prestage_plan, product_readiness,
 )
 from bizops.bizops_seed import (

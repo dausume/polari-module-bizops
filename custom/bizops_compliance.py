@@ -1,5 +1,5 @@
 """
-@module bizops.bizops_compliance
+@module bizops.custom.bizops_compliance
 
 Sellability + QA reporting (biz-4): which sale contexts a product
 variant is allowed in RIGHT NOW, derived from ComplianceRecord
@@ -10,7 +10,7 @@ testing, always. NOT LEGAL ADVICE — every report says so.
 """
 
 from bizops.bizops_basis import COMPLIANCE_LEVELS
-from bizops.bizops_flows import _loads, _named, _rows
+from bizops.custom.bizops_flows import _loads, _named, _rows
 
 DISCLAIMER = ('requirement references are pointers, NOT legal '
               'advice — verify for your jurisdiction')
