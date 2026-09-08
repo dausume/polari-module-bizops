@@ -1,26 +1,8 @@
 """
-@module bizops.bizops_basis
+@module bizops.objects.bizops
 
-Business operations as DATA (biz-1, Dustin 2026-07-28): how a
-business starts, how it upgrades, how the local economy progresses
-toward a functioning baseline, and the production-planning rows the
-order planner runs on.
-
-The canonical origin (an axiom of the model, seeded not assumed):
-EVERY business starts as ONE PERSON buying from whatever is
-available and selling only in off-time — online or at farmer/maker
-markets. Everything after that is discrete UPGRADE STEPS with
-evidence gates, never silent growth.
-
-@consumers polariServer defClassList + seed_pairs, bizops.*
+The bizops rows of bizops, one class per file: BusinessStageDefinition, BusinessUpgradeStep, BusinessProfile, ProductionRunRecord, LocalEconomyMilestone, ProcessWorkflowDefinition, MarketSessionRecord, PartnershipAgreement, BusinessRiskNote, ComplianceRequirement, ComplianceRecord, QualityCheckDefinition, QualityCheckRecord, ProductOrder.
 """
-# sap-2c INDEX (design §7): the classes live one-per-file under objects/bizops/;
-# this file re-exports them (imports keep working) and holds what they share.
-# The original imports stay: names this file imported were re-exported implicitly.
-
-from objectTreeDecorators import treeObject, treeObjectInit
-
-from bizops.objects.bizops._shared import COMPLIANCE_LEVELS, ORDER_STATUSES, UPGRADE_KINDS  # noqa: F401
 from bizops.objects.bizops.BusinessStageDefinition import BusinessStageDefinition  # noqa: F401
 from bizops.objects.bizops.BusinessUpgradeStep import BusinessUpgradeStep  # noqa: F401
 from bizops.objects.bizops.BusinessProfile import BusinessProfile  # noqa: F401
